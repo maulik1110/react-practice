@@ -17,18 +17,21 @@ function App() {
     if(chara) str += "!@#$%^&*()[]{}"
 
     for (let i = 0; index <= array.length; index++) {
-      let char = Math.random() * str.length +1;
-      console.log(char);
+      let char = Math.floor(Math.random() * str.length +1);
+      // only index de che
+      // console.log(char);
       // const element = array[index];
-      
+      pass = str.charAt(char)      
     }
+    setPassword(pass)
+
   },[length,numeric,setPassword,chara])
 
   return (
     <>
-    <div className='w-full max-wd-md mx-auto shadow-md rounded-lg px-4 my-8 text-orange-500 bg-gray-700'>
-      <h1 className='text-white text-center text-4xl '>Passowrd generator</h1>
-    </div>
+    <div className='w-full max-w-full mx-auto shadow-md rounded-lg px-4 my-auto text-orange-500 bg-gray'>Hi</div>
+
+    <h2 className='text-pink' style={{backgroundColor: olive}}>maulik</h2>
     </>
   )
 }
